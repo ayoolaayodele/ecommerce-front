@@ -19,18 +19,8 @@ const AdminDashboard = () => {
             </Link>
           </li>
           <li className='list-group-item'>
-            <Link className='nav-link' to='/create/product'>
+            <Link className='nav-link' to={'/create/product'}>
               Create Product
-            </Link>
-          </li>
-          <li className='list-group-item'>
-            <Link className='nav-link' to='/admin/orders'>
-              View Orders
-            </Link>
-          </li>
-          <li className='list-group-item'>
-            <Link className='nav-link' to='/admin/products'>
-              Manage Products
             </Link>
           </li>
         </ul>
@@ -46,7 +36,7 @@ const AdminDashboard = () => {
           <li className='list-group-item'>{name}</li>
           <li className='list-group-item'>{email}</li>
           <li className='list-group-item'>
-            {role === 1 ? 'Admin' : 'Registered User'}
+            {role === 1 ? 'Admin' : 'Registered user'}
           </li>
         </ul>
       </div>
@@ -56,12 +46,13 @@ const AdminDashboard = () => {
   return (
     <Layout
       title='Dashboard'
-      description={`G'day ${name}!`}
+      description={`G'day ${name}`}
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-3'>{adminLinks()}</div>
-        <div className='col-9'>{adminInfo()}</div>
+        <div className='col-xs-3 mr-5'>{adminLinks()}</div>
+
+        <div className='col-9 mr-5 mr-5'>{adminInfo()}</div>
       </div>
     </Layout>
   );

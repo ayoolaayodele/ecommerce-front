@@ -97,8 +97,8 @@ const UserDashboard = () => {
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-3'>{userLinks()}</div>
-        <div className='col-9'>
+        <div className='col-xs-3 mr-5'>{userLinks()}</div>
+        <div className='col-xs-3 mr-5'>
           {userInfo()}
           {purchaseHistory(history)}
         </div>

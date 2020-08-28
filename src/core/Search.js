@@ -78,7 +78,7 @@ const Search = () => {
   const searchForm = () => (
     <form onSubmit={searchSubmit}>
       <span className='input-group-text'>
-        <div className='input-group input-group-lg'>
+        <div className='input-group input-group-xs'>
           <div className='input-group-prepend'>
             <select className='btn mr-2' onChange={handleChange('category')}>
               <option value='All'>All</option>
